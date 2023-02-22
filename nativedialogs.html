@@ -10,7 +10,12 @@
 <body>
     <main>
         <!--Button 1 (Alert)-->
-        <button type="button">Alert</button> 
+        <button id="btn1">Alert</button>
+            <script>
+                document.getElementById("btn1").addEventListener("click", function() {
+                    alert("This is an ALERT");
+                });
+            </script> 
 
 
         <!--Button 2 (Confirm)-->
