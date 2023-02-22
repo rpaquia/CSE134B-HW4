@@ -17,11 +17,13 @@
                 });
             </script> 
 
-
         <!--Button 2 (Confirm)-->
-        <button type="button">Confirm</button> 
-
-
+        <button id="btn2">Confirm</button>
+            <script>
+                document.getElementById("btn2").addEventListener("click", function() {
+                    confirm("Press OK or Cancel");
+                });
+            </script> 
 
         <!-- Button 3 (Prompt)-->
         <button type="button">Prompt</button> 
