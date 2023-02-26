@@ -22,14 +22,13 @@
         <output id="txt"></output>
             <script>
                 document.getElementById("btn2").addEventListener("click", confirmClick);
-
                 function confirmClick() {
                     let text = "Press Ok or Cancel.";
                     if(confirm(text) == true) {
-                        text = "User pressed Ok!";
+                        text = "The value returned by the confirm method is Ok";
                     }
                     else {
-                        text = "User pressed Cancel";
+                        text = "The value returned by the confirm method is Cancel";
                     }
                     document.getElementById("txt").innerHTML = text;
                 }
