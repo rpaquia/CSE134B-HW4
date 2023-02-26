@@ -19,12 +19,22 @@
 
         <!--Button 2 (Confirm)-->
         <button id="btn2">Confirm</button>
+        <p id="txt"></p>
             <script>
-                document.getElementById("btn2").addEventListener("click", function() {
-                    confirm("Press OK or Cancel");
-                });
-            </script> 
+                document.getElementById("btn2").addEventListener("click", confirmClick);
 
+                function confirmClick() {
+                    let text = "Press Ok or Cancel.";
+                    if(confirm(text) == true) {
+                        text = "User pressed Ok!";
+                    }
+                    else {
+                        text = "User pressed Cancel";
+                    }
+                    document.getElementById("txt").innerHTML = text;
+                }
+            </script> 
+            
         <!-- Button 3 (Prompt)-->
         <button type="button">Prompt</button> 
 
