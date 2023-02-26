@@ -35,18 +35,18 @@
             </script>
         <!-- Button 3 (Prompt)-->
         <button id="btn3">Prompt</button>
-        <output id="outpt"></output>
+        <output id="output"></output>
             <script>
                 document.getElementById("btn3").addEventListener("click", promptUp);
                     let text;
-                    let inpt = prompt("Enter a color", "");
-                    if(inpt == null || person == "") {
+                    let input = prompt("Enter a color", "Type Here");
+                    if(input == null || person == "") {
                         text = "User entered nothing";
                     }
                     else {
-                        text = "You chose " + inpt;
+                        text = "You chose " + input + "!";
                     }
-                    document.getElementById("outpt").innerHTML = text;
+                    document.getElementById("output").innerHTML = text;
             </script>
 
 
