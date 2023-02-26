@@ -38,6 +38,7 @@
         <p id="output"></p>
             <script>
                 document.getElementById("btn3").addEventListener("click", promptUp);
+                function promptUp() {
                     let text;
                     let input = prompt("Enter a color", "Type Here");
                     if(input == null || person == "") {
@@ -47,6 +48,7 @@
                         text = "You chose " + input + "!";
                     }
                     document.getElementById("output").innerHTML = text;
+                }
             </script>
 
 
