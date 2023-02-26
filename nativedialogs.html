@@ -34,7 +34,8 @@
                 }
             </script>
         <!-- Button 3 (Prompt)-->
-        <button id="btn3">Prompt</button> 
+        <button id="btn3">Prompt</button>
+        <output id="outpt"></output>
             <script>
                 document.getElementById("btn3").addEventListener("click", promptUp);
                     let text;
@@ -45,6 +46,7 @@
                     else {
                         text = "You chose " + inpt;
                     }
+                    document.getElementById("outpt").innerHTML = inpt;
             </script>
 
 
