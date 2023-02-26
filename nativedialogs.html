@@ -34,8 +34,18 @@
                 }
             </script>
         <!-- Button 3 (Prompt)-->
-        <button type="button">Prompt</button> 
-
+        <button id="btn3">Prompt</button> 
+            <script>
+                document.getElementById("btn3").addEventListener("click", promptUp);
+                    let text;
+                    let inpt = prompt("Enter a color", "");
+                    if(inpt == null || person == "") {
+                        text = "User entered nothing";
+                    }
+                    else {
+                        text = "You chose " + inpt;
+                    }
+            </script>
 
 
         <!--Button 4 (Safer Prompt)-->
