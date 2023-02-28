@@ -3,19 +3,21 @@
 
 <head>
     <title>Custom Dialogs Page</title>
-    <script src="customdiaglog.js"></script>
-    <script type="text/javascript" src="dompurify\DOMPurify-2.4.4\dist\purify.js"></script>
+        <script src="customdiaglog.js"></script>
+        <script type="text/javascript" src="dompurify\DOMPurify-2.4.4\dist\purify.js"></script>
 </head>
 
 
 <body>
     <main>
         <!--Custom Alert Button-->
-        <dialog>
+        <dialog id="alertDialog">
             <p>Alert was pressed!</p>
-            <button id="displayDial">Ok!</button>
+            <form method="dialog">
+                <button>Ok!</button>
+            </form>
         </dialog>
-       
+        <button id="alertButton">Alert</button>
 
         
         <button id="btn2">Confirm</button>

@@ -1,7 +1,10 @@
 // Custom Alert
-document.getElementById('displayDial').addEventListener('click', alertFunction() {
-    
-})
+const screenAlert = document.getElementById('alertButton');
+const dialogBox = document.getELementById('alertDialog');
+
+screenAlert.addEventListener('click', () => {
+    dialogBox.showModal();
+});
 
 //Custom Confirm
 
