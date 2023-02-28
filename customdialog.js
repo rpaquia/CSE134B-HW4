@@ -7,8 +7,8 @@ screenAlert.addEventListener('click', () => {
 });
 
 //Custom Confirm
-const screenConfirm = document.getElementById('confirmDialog');
-const dialogConfBox = document.getElementById('btn2');
+const screenConfirm = document.getElementById('btn2');
+const dialogConfBox = document.getElementById('confirmDialog');
 
 screenConfirm.addEventListener('click', () => {
     dialogConfBox.showModal();
