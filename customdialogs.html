@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Custom Dialogs Page</title>
     <script src="customdiaglog.js"></script>
     <script type="text/javascript" src="dompurify\DOMPurify-2.4.4\dist\purify.js"></script>
 </head>
@@ -9,7 +10,13 @@
 
 <body>
     <main>
-        <button id="btn1">Alert</button>
+        <!--Custom Alert Button-->
+        <dialog>
+            <p>Alert was pressed!</p>
+            <button id="displayDial">Ok!</button>
+        </dialog>
+       
+
         
         <button id="btn2">Confirm</button>
 
