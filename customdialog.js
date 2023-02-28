@@ -10,6 +10,7 @@ screenAlert.addEventListener('click', () => {
 const screenConfirm = document.getElementById('btn2');
 const dialogConfBox = document.getElementById('confirmDialog');
 
+
 screenConfirm.addEventListener('click', () => {
     dialogConfBox.showModal();
 })
