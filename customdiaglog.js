@@ -1,6 +1,6 @@
 // Custom Alert
 const screenAlert = document.getElementById('alertButton');
-const dialogBox = document.getELementById('alertDialog');
+const dialogBox = document.getElementById('alertDialog');
 
 screenAlert.addEventListener('click', () => {
     dialogBox.showModal();
