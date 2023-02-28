@@ -9,6 +9,7 @@
 
 
 <body>
+    <h1>Native Dialogs</h1>
     <main>
         <!--Button 1 (Alert)-->
         <button id="btn1">Alert</button>
@@ -66,7 +67,6 @@
                         text = "User entered nothing";
                     }
                     else {
-                        
                         text = "You chose " + input + "!";
                         clean = DOMPurify.sanitize(text); 
                     }
