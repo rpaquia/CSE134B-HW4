@@ -66,10 +66,11 @@
                         text = "User entered nothing";
                     }
                     else {
+                        
                         text = "You chose " + input + "!";
-                        clean = DOMPurify.sanitize(text);
+                        
                     }
-                    document.getElementById("output").innerHTML = clean;
+                    document.getElementById("output").innerHTML = text;
                 }
             </script>
         
