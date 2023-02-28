@@ -17,4 +17,5 @@ screenConfirm.addEventListener('click', () => {
 //Custom Prompt
 dialogConfBox.addEventListener('close', () => {
     let text = dialogConfBox.value;
+    console.log(text);
 })
