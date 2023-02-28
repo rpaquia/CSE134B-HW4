@@ -13,9 +13,9 @@ const dialogConfBox = document.getElementById('confirmDialog');
 
 screenConfirm.addEventListener('click', () => {
     dialogConfBox.showModal();
-})
+});
 //Custom Prompt
 dialogConfBox.addEventListener('close', () => {
     let text = dialogConfBox.returnValue;
-    console.log(text);
-})
+
+});
