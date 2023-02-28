@@ -37,7 +37,7 @@
 
         <!-- Button 3 (Prompt)-->
         <button id="btn3">Prompt</button>
-        <output id="output"></output>
+        
             <script>
                 document.getElementById("btn3").addEventListener("click", promptUp);
                 function promptUp() {
@@ -52,12 +52,12 @@
                     document.getElementById("output").innerHTML = text;
                 }
             </script>
-
+        <output id="output"></output>
         <!--Button 4 (Safer Prompt)-->
         <button id="btn4">Safer Prompt</button> 
-        <output id="output"></output>
+        
             <script>
-                document.getElementById("btn3").addEventListener("click", promptUp);
+                document.getElementById("btn4").addEventListener("click", promptUp);
                 function promptUp() {
                     let text;
                     let clean;
@@ -68,12 +68,12 @@
                     else {
                         
                         text = "You chose " + input + "!";
-                        
+                        clean = DOMPurify.sanitize(text); 
                     }
-                    document.getElementById("output").innerHTML = text;
+                    document.getElementById("output").innerHTML = clean;
                 }
             </script>
-        
+        <output id="output"></output>
 
     </main>
 
