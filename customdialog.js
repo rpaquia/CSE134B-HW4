@@ -16,5 +16,5 @@ screenConfirm.addEventListener('click', () => {
 });
 //Custom Prompt
 dialogConfBox.addEventListener('close', () => {
-    outputVal.value = `\nReturnValue: ${dialogConfBox.returnValue}.`;
+    outputVal.value = `ReturnValue: ${dialogConfBox.returnValue}.`;
 });
