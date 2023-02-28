@@ -9,13 +9,13 @@ screenAlert.addEventListener('click', () => {
 //Custom Confirm
 const screenConfirm = document.getElementById('btn2');
 const dialogConfBox = document.getElementById('confirmDialog');
-const outputVal = document.querySelector('output');
+const outputVal = document.getElementById('out');
 
 screenConfirm.addEventListener('click', () => {
     dialogConfBox.showModal();
 });
-//Custom Prompt
 dialogConfBox.addEventListener('close', () => {
-    outputVal.value = `ReturnValue:
-    ${dialogConfBox.returnValue}.`;
+    outputVal.value = `ReturnValue: ${dialogConfBox.returnValue}.`;
 });
+
+//Custom Prompt
