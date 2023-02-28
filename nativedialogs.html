@@ -3,7 +3,7 @@
 
 <head>
     <title>Native Dialogs Page</title>
-    <script type="text/javascript" src="dompurify\DOMPurify-2.4.4\dist\purify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js" integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 
@@ -33,6 +33,7 @@
                     document.getElementById("txt").innerHTML = text;
                 }
             </script>
+
         <!-- Button 3 (Prompt)-->
         <button id="btn3">Prompt</button>
         <output id="output"></output>
@@ -50,9 +51,27 @@
                     document.getElementById("output").innerHTML = text;
                 }
             </script>
+
         <!--Button 4 (Safer Prompt)-->
         <button type="button">Safer Prompt</button> 
-            
+        <button id="btn3">Prompt</button>
+        <output id="output"></output>
+            <script>
+                document.getElementById("btn3").addEventListener("click", promptUp);
+                function promptUp() {
+                    let text;
+                    let clean;
+                    let input = prompt("Enter a color", "Type Here");
+                    if(input == null || input == "") {
+                        text = "User entered nothing";
+                    }
+                    else {
+                        text = "You chose " + input + "!";
+                        clean = DOMPurify.sanitize(text);
+                    }
+                    document.getElementById("output").innerHTML = clean;
+                }
+            </script>
         
 
     </main>
@@ -60,5 +79,6 @@
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js" integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
