@@ -19,3 +19,9 @@ dialogConfBox.addEventListener('close', () => {
 });
 
 //Custom Prompt
+const screenPrompt = document.getElementById('promptBtn');
+const dialogPrBox = document.getElementById('promptDialog');
+
+screenPrompt.addEventListener('click', () => {
+    dialogPrBox.showModal();
+});

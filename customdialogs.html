@@ -4,6 +4,7 @@
 <head>
     <title>Custom Dialogs Page</title>
     <script src="customdialog.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js" integrity="sha512-TRW4uJEyH03RBYDDP/0Nerf3y1zPCPzmLBq5IwjYtUyPD505Aro7Xh6ELpKmnH3yeKj6MP3meheJMJXB4aN0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js" integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
@@ -34,8 +35,15 @@
         <output id="out"></output>    
 
         <!--Custom Prompt Button-->
-        <button id="btn3">Prompt</button>
+        <dialog id="promptDialog">
         <form method="dialog">
+            <p>State your first name.</p>
+            <input type="text" id="fname" name="fname">
+        
+        
+        </dialog>
+        <button id="promptBtn">Prompt</button>
+
 
     </main>
 
