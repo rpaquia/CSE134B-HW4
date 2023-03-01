@@ -21,7 +21,13 @@ dialogConfBox.addEventListener('close', () => {
 //Custom Prompt
 const screenPrompt = document.getElementById('promptBtn');
 const dialogPrBox = document.getElementById('promptDialog');
+//For holding the inputted name
+const outputName = document.getElementById('outName');
 
 screenPrompt.addEventListener('click', () => {
     dialogPrBox.showModal();
+});
+
+dialogPrBox.addEventListener('close', () => {
+    outputName.value = `ReturnValue: ${dialogPrBox.returnValue}.`;
 });
