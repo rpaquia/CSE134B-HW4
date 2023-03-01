@@ -71,7 +71,7 @@
                         text = "You chose " + input + "!";
                         clean = DOMPurify.sanitize(text); 
                     }
-                    document.getElementById("output").innerHTML = clean;
+                    document.querySelector("output").innerHTML = clean;
                 }
             </script>
             

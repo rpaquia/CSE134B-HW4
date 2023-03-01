@@ -4,7 +4,8 @@ let items = JSON.parse(localStorage.getItem("todo-list")) || [];
 
 // Function that adds items to blog 
 function addItem() {
-    // gets value that is put inside <input>
+    // gets value that is put inside <input> with querySelector
+    let inputBox = document.querySelector()
 
 }
 
