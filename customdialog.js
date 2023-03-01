@@ -21,9 +21,8 @@ dialogConfBox.addEventListener('close', () => {
 //------------Custom Prompt------------
 const screenPrompt = document.getElementById('promptBtn');
 const dialogPrBox = document.getElementById('promptDialog');
-//For holding the inputted name
-const outputName = document.getElementById('outName');
-const typedName = document.querySelector('#nameInput')
+const outputName = document.getElementById('outName'); //For holding the inputted name
+const typedName = document.querySelector('#nameInput'); //Takes in the user's typed name
 screenPrompt.addEventListener('click', () => {
     dialogPrBox.showModal();
 });
