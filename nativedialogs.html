@@ -62,16 +62,17 @@
                 document.getElementById("btn4").addEventListener("click", promptUp);
                 function promptUp() {
                     let text;
-                    let clean;
                     let input = prompt("Enter a color", "Type Here");
                     if(input == null || input == "") {
                         text = "User entered nothing";
+
                     }
                     else {
                         text = "You chose " + input + "!";
-                        clean = DOMPurify.sanitize(text); 
+                        clean = DOMPurify.sanitize(text);
+                        document.querySelector("output").innerHTML = clean;
                     }
-                    document.querySelector("output").innerHTML = clean;
+                    
                 }
             </script>
             
