@@ -29,5 +29,5 @@ screenPrompt.addEventListener('click', () => {
 
 dialogPrBox.addEventListener('close', () => {
     //outputName.value = `ReturnValue: ${typedName.returnValue}.`;
-    outputName.value = typedName;
+    outputName.value = typedName.value;
 });
