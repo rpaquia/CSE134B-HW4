@@ -12,6 +12,10 @@ function addItem() {
 //------------Code for opening dialog box------------
 const screenAddBtn = document.getElementById('addBtn');
 const addDialogPopup = document.getElementById('addDiagBox');
+const output = document.getElementById('out'); 
 screenAddBtn.addEventListener('click', () => {
     addDialogPopup.showModal();
+});
+addDialogPopup.addEventListener('close', () => {
+    
 });
