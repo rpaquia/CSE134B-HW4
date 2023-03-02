@@ -35,7 +35,45 @@ function addItem() {
     inputSumBox.value = "";
 }
 
+// function for removing items, then saving updated array
+// to local storage
+function deleteItem(index) {
+    items.splice(index, 1);
+    localStorage.setItem("blog-list", JSON.stringify(items));
+    listItems();
+  }
+  
+  function markAsDone(index) {
+    items[index].done = !items[index].done;
+    localStorage.setItem("blog-list", JSON.stringify(items));
+    listItems();
+  }
 
+// function that creates the blog items and populates html page
+function listItems() {
+    let list = "";
+    for (let i = 0; i < items.length; i++) {
+      list += "<li class=" + (items[i].done ? "done" : "") + ">";
+      list += items[i].value + " ";
+      list +=
+        "<small title='click me to mark as done' class='label' onclick='markAsDone(" +
+        i +
+        ")'>" +
+        items[i].time +
+        "</small> ";
+      list +=
+        "<span class='label alert' onclick='deleteItem(" +
+        i +
+        ")'>delete</span></li>";
+    }
+    document.querySelector("#list-items").innerHTML = list;
+  }
+  
+  // function to run when page loads
+  (function () {
+    listItems();
+  })();
+  
 
 
 
