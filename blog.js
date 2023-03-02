@@ -17,5 +17,5 @@ screenAddBtn.addEventListener('click', () => {
     addDialogPopup.showModal();
 });
 addDialogPopup.addEventListener('close', () => {
-    
+    output.value;
 });
