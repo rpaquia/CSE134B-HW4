@@ -1,5 +1,5 @@
 
-let items = JSON.parse(localStorage.getItem("todo-list")) || [];
+let items = JSON.parse(localStorage.getItem("blog-list")) || [];
 
 
 // Function that adds items to blog 
@@ -20,11 +20,19 @@ function addItem() {
 
     // If inputs are valid, add them to array
     items.push({
-        
-    })
+        value: titleItem, summaryItem,
+        time: new Date().toLocaleDateString("en-US"),
+    });
 
+    // convert to a string with JSON.stringify and save to localStorage
+    localStorage.setItem("blog list", JSON.stringify(items));
 
+    // Call function to list all blog items
+    listItems();
 
+    //clear all input boxes
+    inputTitleBox.value = "";
+    inputSumBox.value = "";
 }
 
 
