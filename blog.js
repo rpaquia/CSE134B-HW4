@@ -6,7 +6,7 @@ let items = JSON.parse(localStorage.getItem("todo-list")) || [];
 function addItem() {
     // gets value that is put inside <input> with querySelector
     let inputBox = document.querySelector()
-
+    
 }
 
 //------------Code for opening dialog box------------
@@ -19,3 +19,4 @@ screenAddBtn.addEventListener('click', () => {
 addDialogPopup.addEventListener('close', () => {
     output.value;
 });
+
