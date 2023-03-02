@@ -17,8 +17,10 @@ function addItem() {
     // gets value that is put inside <input> with querySelector
     let inputTitleBox = document.querySelector('nameInput');
     let inputSumBox = document.querySelector('sumInput');
-    let titleItem = inputBox.value;
-    let summaryItem = inputBox.value;
+
+    // Need the title,summary
+    let titleItem = inputTitleBox.value;
+    let summaryItem = inputSumBox.value;
 
     // If either input is empty return and alert user
     if(titleItem === "") {
