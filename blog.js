@@ -1,6 +1,16 @@
 
 let items = JSON.parse(localStorage.getItem("blog-list")) || [];
 
+//------------Code for opening dialog box------------
+const screenAddBtn = document.getElementById('addBtn');
+const addDialogPopup = document.getElementById('addDiagBox');
+const output = document.getElementById('out'); 
+screenAddBtn.addEventListener('click', () => {
+    addDialogPopup.showModal();
+});
+addDialogPopup.addEventListener('close', () => {
+    output.value;
+});
 
 // Function that adds items to blog 
 function addItem() {
@@ -66,7 +76,7 @@ function listItems() {
         i +
         ")'>delete</span></li>";
     }
-    document.querySelector("#list-items").innerHTML = list;
+    document.querySelector("#blog-items").innerHTML = list;
   }
   
   // function to run when page loads
@@ -74,17 +84,4 @@ function listItems() {
     listItems();
   })();
   
-
-
-
-//------------Code for opening dialog box------------
-const screenAddBtn = document.getElementById('addBtn');
-const addDialogPopup = document.getElementById('addDiagBox');
-const output = document.getElementById('out'); 
-screenAddBtn.addEventListener('click', () => {
-    addDialogPopup.showModal();
-});
-addDialogPopup.addEventListener('close', () => {
-    output.value;
-});
 
