@@ -8,7 +8,7 @@
 <body>
     <h1>Blog List</h1>
     <dialog id="addDiagBox">
-        <button id="submit">X</button>
+    <form method="dialog">
         <!--Where list entries will be entered-->
         <label for="tname">Title:</label>
         <input type="text" id="nameInput">
@@ -18,6 +18,7 @@
                 <button value="false">Cancel</button>
                 <button onclick="addItem()" value="true">Confirm</button>
             </p>
+    </form>
     </dialog>
     
     <button id="addBtn">Add</button>

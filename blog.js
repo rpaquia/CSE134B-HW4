@@ -1,7 +1,7 @@
 
 let items = JSON.parse(localStorage.getItem("blog-list")) || [];
 
-//------------Code for opening dialog box------------
+// Code for opening dialog box
 const screenAddBtn = document.getElementById('addBtn');
 const addDialogPopup = document.getElementById('addDiagBox');
 const output = document.getElementById('out'); 
