@@ -12,6 +12,7 @@ addDialogPopup.addEventListener('close', () => {
     listItems();
 });
 
+window.addItem() = addItem();
 // Function that adds items to blog 
 function addItem() {
     // gets value that is put inside <input> with querySelector
@@ -47,8 +48,7 @@ function addItem() {
     inputTitleBox.value = "";
     inputSumBox.value = "";
 }
- window.addItem() = addItem();
- 
+
 // function for removing items, then saving updated array
 // to local storage
 function deleteItem(index) {
