@@ -38,7 +38,7 @@ function addItem() {
     });
 
     // convert to a string with JSON.stringify and save to localStorage
-    localStorage.setItem("blog list", JSON.stringify(items));
+    localStorage.setItem("blog-list", JSON.stringify(items));
 
     // Call function to list all blog items
     listItems();
