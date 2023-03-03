@@ -47,7 +47,8 @@ function addItem() {
     inputTitleBox.value = "";
     inputSumBox.value = "";
 }
-
+ window.addItem() = addItem();
+ 
 // function for removing items, then saving updated array
 // to local storage
 function deleteItem(index) {
