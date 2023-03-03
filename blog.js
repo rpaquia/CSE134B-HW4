@@ -12,7 +12,6 @@ addDialogPopup.addEventListener('close', () => {
     listItems();
 });
 
-window.addItem() = addItem();
 // Function that adds items to blog 
 function addItem() {
     // gets value that is put inside <input> with querySelector
