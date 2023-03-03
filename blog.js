@@ -8,9 +8,9 @@ const output = document.getElementById('out');
 screenAddBtn.addEventListener('click', () => {
     addDialogPopup.showModal();
 });
-//addDialogPopup.addEventListener('close', () => {
-  //  output.value;
-//});
+addDialogPopup.addEventListener('close', () => {
+    listItems();
+});
 
 // Function that adds items to blog 
 function addItem() {
