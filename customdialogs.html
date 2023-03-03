@@ -39,8 +39,9 @@
             <p>State your first name.</p>
             <input type="text" id="nameInput" value="Enter name here">
             <script>
-                
-                
+                let clean;
+                let name = document.getElementById("nameInput").value;
+                clean = DOMPurify.sanitize(name);                
             </script>
             <p>
                 <button value="false">Cancel</button>

@@ -29,9 +29,6 @@ screenPrompt.addEventListener('click', () => {
 });
 
 dialogPrBox.addEventListener('close', () => {
-    function cleanText() {
-
-    }
     outputName.value = typedName.value;
 });
 
