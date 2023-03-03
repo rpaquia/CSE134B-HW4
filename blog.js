@@ -33,7 +33,7 @@ function addItem() {
     // If inputs are valid, add them to array
     items.push({
         value: titleItem,
-        summary: summaryItem,
+        value: summaryItem,
         time: new Date().toLocaleDateString("en-US"),
     });
 

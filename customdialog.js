@@ -24,9 +24,14 @@ const dialogPrBox = document.getElementById('promptDialog');
 const outputName = document.getElementById('outName'); //For holding the inputted name
 const typedName = document.querySelector('#nameInput'); //Takes in the user's typed name
 screenPrompt.addEventListener('click', () => {
+    // Shows the dialog box
     dialogPrBox.showModal();
 });
 
 dialogPrBox.addEventListener('close', () => {
+    function cleanText() {
+
+    }
     outputName.value = typedName.value;
 });
+
